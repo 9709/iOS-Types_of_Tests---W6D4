@@ -17,14 +17,14 @@
 // THE SOFTWARE.
 
 import XCTest
-@testable import Testing
+@testable import TestingTypes
 
 class ViewControllerTests: XCTestCase {
   
   var viewController: ViewController!
   override func setUp() {
     super.setUp()
-    viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewController") as! ViewController
+    viewController = (UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewController") as! ViewController)
   }
   
   func test_ShouldBeTheTableViewsDelegate() {

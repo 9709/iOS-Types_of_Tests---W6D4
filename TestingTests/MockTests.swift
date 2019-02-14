@@ -17,7 +17,7 @@
 // THE SOFTWARE.
 
 import XCTest
-@testable import Testing
+@testable import TestingTypes
 
 class MockUserDefaults: UserDefaultsType {
   
