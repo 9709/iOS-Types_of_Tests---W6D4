@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		221AD14B2214F26600BAE49E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22749E951FD5F07E009B1F2D /* Info.plist */; };
 		22749E961FD5F07E009B1F2D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22749E901FD5F07E009B1F2D /* LaunchScreen.xib */; };
 		22749E971FD5F07E009B1F2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22749E911FD5F07E009B1F2D /* Assets.xcassets */; };
 		22749E981FD5F07E009B1F2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22749E921FD5F07E009B1F2D /* Main.storyboard */; };
@@ -242,7 +241,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				221AD14B2214F26600BAE49E /* Info.plist in Resources */,
 				22749E981FD5F07E009B1F2D /* Main.storyboard in Resources */,
 				22749E971FD5F07E009B1F2D /* Assets.xcassets in Resources */,
 				22749E961FD5F07E009B1F2D /* LaunchScreen.xib in Resources */,
