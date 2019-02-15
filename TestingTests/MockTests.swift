@@ -36,7 +36,7 @@ class MockUserDefaults: UserDefaultsType {
   }
   
   func integer(forKey defaultName: String) -> Int {
-    return -1
+    return currentScore
   }
   
 }
@@ -55,7 +55,14 @@ class MockTests: XCTestCase {
   }
   
   func test_getScore_ShouldReturnTheUserDefaultScore() {
+    mockUserDefaults.currentScore = 0
+    XCTAssertEqual(gameStateManager.getCurrentScore(), 0);
     
+    mockUserDefaults.currentScore = 1
+    XCTAssertEqual(gameStateManager.getCurrentScore(), 1);
+    
+    mockUserDefaults.currentScore = 3
+    XCTAssertEqual(gameStateManager.getCurrentScore(), 3);
   }
   
   func test_saveScore_GivenANumber_ShouldSaveThatNumberToUserDefaults() {
